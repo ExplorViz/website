@@ -1,0 +1,8 @@
+# Ignore build output
+docs/
+
+# Never ignore .gitkeep files
+!**/.gitkeep
+
+# macOS internals
+**/.DS_Store

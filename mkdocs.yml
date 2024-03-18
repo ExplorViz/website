@@ -1,0 +1,64 @@
+site_name: ""
+site_url: https://explorviz.dev
+repo_url: https://github.com/explorviz
+
+site_author: "Alexander Krause-Glau"
+
+remote_branch: "website"
+
+docs_dir: "src"
+site_dir: "docs"
+
+edit_uri: ""
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  logo: images/explorviz-logo-dark.png
+  name: material
+  favicon: images/favicon.png
+  features:
+    - toc.follow
+    - navigation.tabs
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: white
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/explorviz
+      name: ExplorViz on GitHub
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/explorviz/
+      name: ExplorViz on DockerHub
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:info@explorviz.dev
