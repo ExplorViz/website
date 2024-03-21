@@ -1,6 +1,9 @@
 # Ignore build output
 docs/
 
+# Ignore temp files DrawIO
+**/*.bkp
+
 # Never ignore .gitkeep files
 !**/.gitkeep
 

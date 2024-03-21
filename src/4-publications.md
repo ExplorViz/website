@@ -8,7 +8,7 @@ hide:
 
 Below you can find a list of publications that are directly related to ExplorViz:
 
-- Krause-Glau, A. and Hasselbring, W. ”[Collaborative, Code-Proximal Dynamic Software Visualization within Code Editors](https://arxiv.org/abs/2308.15785)”. In: _IEEE Working Conference on Software Visualization_. 2023. In press.
+- Krause-Glau, A. and Hasselbring, W. ”[Collaborative, Code-Proximal Dynamic Software Visualization within Code Editors](https://ieeexplore.ieee.org/document/10350183)”. In: _IEEE Working Conference on Software Visualization_. 2023.
 - Krause-Glau, A., Hansen M. and Hasselbring, W. ”[Collaborative Program Comprehension in Extended Reality](https://oceanrep.geomar.de/id/eprint/57805/)”. In: _Software Engineering_. 2023
 - Krause-Glau, A., Bader M. and Hasselbring, W. ”[Collaborative Software Visualization for Program Comprehension](https://ieeexplore.ieee.org/document/9978325)”. In: _IEEE Working Conference on Software Visualization_. 2022.
 - Krause-Glau, A. and Hasselbring, W. ”[Scalable Collaborative Software Visualization as a Service](https://ieeexplore.ieee.org/abstract/document/9946323)”. In: _IEEE International Conference on Cloud Engineering_. 2022.

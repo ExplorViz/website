@@ -1,0 +1,26 @@
+default:
+  tags:
+    - exec-docker
+
+stages:
+  - deploy
+
+upload:
+  stage: deploy
+  image: alpine:3.19
+  before_script:
+    - apk update && apk add openssh-client bash python3 py3-pip openssl
+  script:
+    # run ssh-agent
+    - eval $(ssh-agent -s)
+    # add ssh key stored in SSH_PRIVATE_KEY_BASE_64 variable to the agent store
+    - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY_BASE_64" | openssl base64 -A -d)'
+    - mkdir -p ~/.ssh
+    # add BASE64 encoded known_hosts stored in SSH_KNOWN_HOSTS variable
+    - echo "$SSH_KNOWN_HOSTS" | openssl base64 -A -d > ~/.ssh/known_hosts
+    # install mkdocs and build website
+    - pip install mkdocs-material --break-system-packages
+    - mkdocs build
+    # upload website
+    - cd docs
+    - "scp -P $WEBSERVER_PORT -r ./* $WEBSERVER_URL"
