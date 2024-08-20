@@ -9,7 +9,7 @@ hide:
 
 Below you can find instructions that will set up a demo of ExplorViz' frontend component with exemplary data, i.e., mocked backend and target application. You can also [try out our hosted demo instance](https://samoa.se.informatik.uni-kiel.de):
 
-1\. Clone the [deployment](https://github.com/ExplorViz/deployment) repo and `cd` into the correct directory
+1\. Clone the [deployment](https://github.com/ExplorViz/deployment) repo and `cd` into the directory of the frontend demo.
 
 ```sh
 git clone https://github.com/ExplorViz/deployment.git
@@ -19,7 +19,7 @@ cd deployment/frontend-demo/
 2\. Use `docker compose` to start the software stack. The frontend will run on port `8080`. You can change all ports in the (hidden) `.env` file.
 
 ```sh
-docker compose up -d
+docker compose up --pull=always -d
 ```
 
 3\. Open [http://localhost:8080](http://localhost:8080) in your web browser, e.g. Mozilla Firefox.
@@ -39,10 +39,10 @@ git clone https://github.com/ExplorViz/deployment.git
 cd deployment/docker/
 ```
 
-2\. Use `docker compose` to start ExplorViz' software environment and its services. The frontend is served via Nginx and by default runs on port `8080`. You can change ports and hostnames in the (hidden) `.env` file.
+2\. Use `docker compose` to start ExplorViz' software environment and its services. The frontend is served via nginx and by default runs on port `8080`. You can change ports and hostnames in the (hidden) `.env` file.
 
 ```sh
-docker compose up -d
+docker compose up --pull=always -d
 ```
 
 3\. Open [http://localhost:8080](http://localhost:8080) in your web browser, e.g. Mozilla Firefox.
@@ -62,17 +62,17 @@ cd deployment/example-applications/petclinic-demo/
 7\. Use `docker compose` to start the PetClinic.
 
 ```sh
-docker compose up -d
+docker compose up --pull=always -d
 ```
 
 ### Explore the runtime behavior
 
 1\. Open [http://localhost:18080](http://localhost:18080) in your web browser and generate some load by clicking around.
 
-2\. Open [http://localhost:8080](http://localhost:8080) in your web browser and click the :octicons-search-24: icon to open the visualization of the Spring PetClinics runtime behavior.
+2\. Open [http://localhost:8080](http://localhost:8080) in your web browser and click on "Default Landscape" to open the visualization of the Spring PetClinic's runtime behavior.
 
 3\. The visualization is updated every tenth second and shows the aggregated runtime behavior of the Spring PetClinic.
 
-4\. (Optional) Right click the white background to access the context menu. Here, you can find additional visualization approaches, e.g., virtual reality or augmented reality.
+4\. (Optional) Right click the white background to access the context menu.
 
-5\. (Optional) Within the context menu you can also open the sidebar. There you will find visualization settings and the collaboration tab that enables you to join or host a collaborative session.
+5\. (Optional) On the top right corner you can find a button to open a sidebar. There you will find visualization settings and the collaboration tab that enables you to join or host a collaborative session.
