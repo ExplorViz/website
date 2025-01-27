@@ -22,7 +22,7 @@ A Software Visualization as a service (SVaaS) approach to facilitate program com
 <a href="2-getting-started">
 <button class="md-button" name="button">Getting started</button>
 </a>
-<a href="https://samoa.se.informatik.uni-kiel.de">
+<a href="https://demo.explorviz.uni-kiel.de">
 <button class="md-button" style="--md-primary-fg-color:#5bb571;--md-accent-fg-color:#5bb571" name="button">Demo</button>
 </a>
 </center>
