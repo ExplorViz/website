@@ -8,6 +8,9 @@ hide:
 
 Below you can find a list of publications that are directly related to ExplorViz:
 
+- Hansen, M., Bielfeldt, H., Bernstetter, A., Kwasnitschka, T. and Hasselbring, W. (2024). "[A Software Visualization Approach for Multiple Visual Output Devices](https://ieeexplore.ieee.org/document/10794947)". In: _IEEE Working Conference on Software Visualization_. 2024.
+- Krause-Glau, A., Damerau, L., Hansen, M. and Hasselbring, W. (2024). "[Visual Integration of Static and Dynamic Software Analysis in Code Reviews via Software City Visualization](https://ieeexplore.ieee.org/document/10794801)". In: _IEEE Working Conference on Software Visualization_. 2024.
+- Krause-Glau, A., Hansen, M. and Hasselbring, W. (2024). "[Collaborative Design and Planning of Software Architecture Changes via Software City Visualization](https://ieeexplore.ieee.org/document/10794941)". In: _IEEE Working Conference on Software Visualization_. 2024.
 - Krause-Glau, A. and Hasselbring, W. ”[Collaborative, Code-Proximal Dynamic Software Visualization within Code Editors](https://ieeexplore.ieee.org/document/10350183)”. In: _IEEE Working Conference on Software Visualization_. 2023.
 - Krause-Glau, A., Hansen M. and Hasselbring, W. ”[Collaborative Program Comprehension in Extended Reality](https://oceanrep.geomar.de/id/eprint/57805/)”. In: _Software Engineering_. 2023
 - Krause-Glau, A., Bader M. and Hasselbring, W. ”[Collaborative Software Visualization for Program Comprehension](https://ieeexplore.ieee.org/document/9978325)”. In: _IEEE Working Conference on Software Visualization_. 2022.
