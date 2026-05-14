@@ -7,7 +7,7 @@ hide:
 # Architecture
 
 <figure markdown>
-![ExplorViz Concept](images/backend-concept.png){width="1200"}
+![ExplorViz Concept](images/explorviz-architecture.png){width="1200"}
 <figcaption>Conceptual design of our<br />
 software visualization as a service approach</figcaption>
 </figure>
