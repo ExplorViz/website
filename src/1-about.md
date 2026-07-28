@@ -8,8 +8,9 @@ hide:
 
 ## Project Description
 
-ExplorViz is an open source research visualization approach, which uses dynamic analysis techniques to provide a live trace visualization of software landscapes.
-A static analysis support is currently under work.
+ExplorViz is an open source research visualization approach, which supports static and dynamic analysis techniques.
+Static program analysis with a wide support for programming languages is implemented in a dedicated Code Analyzer service.
+For dynamic program analysis, we rely on OpenTelemetry-compliant monitoring data to visualize live traces of software landscapes.
 ExplorViz targets system and program comprehension for software landscapes or single applications while still providing details on the communication within an application.
 We utilize the 3D city metaphor combined with an interactive concept of showing only details that are in focus of the analysis.
 For best accessibility, ExplorViz is a web-based tool which employs state of the art technologies like OpenTelemetry, WebGL, and WebXR.
