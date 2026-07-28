@@ -3,3 +3,48 @@
   --md-primary-fg-color--light: #ECB7B7;
   --md-primary-fg-color--dark:  #90030C;
 }
+
+.external-content-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.external-content-block__consent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: min(560px, 100%);
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: var(--md-code-bg-color);
+  text-align: center;
+}
+
+.external-content-block--loaded .external-content-block__consent {
+  display: none;
+}
+
+.external-content-block__consent p {
+  margin: 0;
+}
+
+.external-content-block__content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.external-content-block--loaded .external-content-block__content {
+  display: flex;
+}
+
+.external-content-block__content iframe {
+  max-width: 100%;
+}

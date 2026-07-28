@@ -21,6 +21,9 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/external-content.js
+
 theme:
   logo: images/explorviz-logo-dark.png
   name: material

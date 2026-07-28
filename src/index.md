@@ -29,8 +29,14 @@ A Software Visualization as a service (SVaaS) approach to facilitate program com
 
 ---
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XZym7P0GQbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MYAkRMWLVD8?si=-_j52ftoNy7kcLiN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center>
+<div class="external-content-block">
+  <div class="external-content-block__consent">
+    <p>We provide videos that are hosted on YouTube. Loading them will connect to external servers.</p>
+    <button type="button" class="external-content-block__accept md-button">Load external content</button>
+  </div>
+  <div class="external-content-block__content">
+    <iframe width="560" height="315" data-src="https://www.youtube-nocookie.com/embed/XZym7P0GQbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" data-src="https://www.youtube-nocookie.com/embed/MYAkRMWLVD8?si=-_j52ftoNy7kcLiN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <button type="button" class="external-content-block__revoke md-button">Do not load external content</button>
+  </div>
+</div>
