@@ -31,8 +31,9 @@ A Software Visualization as a service (SVaaS) approach to facilitate program com
 
 <div class="external-content-block">
   <div class="external-content-block__consent">
-    <p>We provide videos that are hosted on YouTube. Loading them will connect to external servers.</p>
-    <button type="button" class="external-content-block__accept md-button">Load external content</button>
+    <p>We embed videos that are hosted on YouTube. Loading them initiates a connection to external services.</p>
+    <p>Please read <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> before proceeding.</p>
+    <button type="button" class="external-content-block__accept md-button">Agree to load external content</button>
   </div>
   <div class="external-content-block__content">
     <iframe width="560" height="315" data-src="https://www.youtube-nocookie.com/embed/XZym7P0GQbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

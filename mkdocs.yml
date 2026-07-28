@@ -28,6 +28,7 @@ theme:
   logo: images/explorviz-logo-dark.png
   name: material
   favicon: images/favicon.png
+  font: false
   features:
     - content.code.copy
     - toc.follow
