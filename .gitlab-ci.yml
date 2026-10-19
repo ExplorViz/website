@@ -19,7 +19,7 @@ upload:
     # add BASE64 encoded known_hosts stored in SSH_KNOWN_HOSTS variable
     - echo "$SSH_KNOWN_HOSTS" | openssl base64 -A -d > ~/.ssh/known_hosts
     # install mkdocs and build website
-    - pip install mkdocs-material --break-system-packages
+    - pip install -r requirements.txt --break-system-packages
     - mkdocs build
     # upload website
     - cd docs

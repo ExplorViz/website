@@ -1,6 +1,10 @@
 # Ignore build output
 docs/
 
+# Local Python environment (see scripts/mkdocs.sh)
+.venv/
+hooks/__pycache__
+
 # Ignore temp files DrawIO
 **/*.bkp
 

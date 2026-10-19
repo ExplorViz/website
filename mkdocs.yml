@@ -1,5 +1,9 @@
 site_name: ""
 site_url: https://explorviz.dev
+
+hooks:
+  - hooks/publications.py
+
 repo_url: https://github.com/explorviz
 
 site_author: "Alexander Krause-Glau"
@@ -58,6 +62,11 @@ theme:
         name: Switch to system preference
 
 extra:
+  publications:
+    bibliography: bibliography/explorviz.bib
+    csl: bibliography/styles/ieee.csl
+    output: html
+    encoding: utf-8
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/explorviz
