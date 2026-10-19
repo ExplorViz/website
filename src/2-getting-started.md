@@ -5,9 +5,9 @@ hide:
 
 # Getting started
 
-## Start Full-Stack of ExplorViz
+## 1) Start Full-Stack of ExplorViz
 
-1\. Clone the [deployment](https://github.com/ExplorViz/deployment) repo and `cd` into the correct directory.
+1\. Clone the [deployment](https://github.com/ExplorViz/deployment) repo and `cd` into the Docker directory.
 
 ```sh
 git clone https://github.com/ExplorViz/deployment.git
@@ -17,16 +17,46 @@ cd deployment/docker/
 2\. Use `docker compose` to start ExplorViz' software environment and its services. The frontend is served via nginx and by default runs on port `8080`. You can change ports and hostnames in the (hidden) `.env` file.
 
 ```sh
-docker compose up --pull=always -d
+docker compose up --pull=always
 ```
 
-3\. Open [http://localhost:8080](http://localhost:8080) in your web browser.
+3\. Open [http://localhost:8080](http://localhost:8080) in your web browser. You should see the frontend of ExplorViz with a list of software landscapes. Proceed with either of the following sections to visualize different aspects of software systems.
 
-4\. You will see a [Software Landscape](/3-architecture) called "Default Landscape" in a table. Click on the :octicons-info-24: icon to see the [Landscape Token](/3-architecture)'s (normally auto-generated) `value` and `secret`. This pair of data is used in the upcoming instrumentation configuration. With that, every incoming data record can be mapped to a user and the software landscape which is identified by the landscape token.
+## 2a) Visualize Git Repositories (Static Analysis)
 
-## Visualize a Running Application
+1\. In the list of software landscapes, add a new landscape via the `+` icon. Click on the :octicons-code-24: icon and insert a GitHub URL (e.g. `https://github.com/spring-projects/spring-petclinic.git`). Then click the `Run Analysis` button to start the static analysis.
 
-In this section we explore how to visualize your desired application's runtime behavior. Therefore, we employ a dynamically analyzed Java example application. For the visualization of a running application, the full software stack of ExplorViz needs to be running.
+2\. After the analysis has finished, the visualization of the analyzed software system should be opened.
+
+<figure markdown>
+![PetClinic Visualization](images/petclinic-visualization.png){width="1500"}
+<figcaption>Exemplary Visualization of the PetClinic Demo</figcaption>
+</figure>
+
+## 2b) Visualize OpenTelemetry Data (Dynamic Analysis)
+
+1\. In this section, we visualize the OpenTelemetry data produced by the [OpenTelemetry Demo](https://github.com/open-telemetry/opentelemetry-demo).
+
+2\. Select the `Default Landscape` in the frontend of ExplorViz.
+
+3\. Start the Docker software stack of the OpenTelemetry demo:
+
+```sh
+cd deployment/docker/compose/otel-demo
+docker compose up
+```
+4\. Ensure that the software stack is running and functional, the frontend of the OpenTelemetry demo should be running on [http://localhost:18080](http://localhost:18080).
+
+5\. The OpenTelemetry data should be visualized in ExplorViz when selecting the `Default Landscape`. Select the `Runtime Chart` from the dropdown in the bottom bar.
+
+<figure markdown>
+![OpenTelemetry Demo](images/opentelemetry-demo.png){width="1500"}
+<figcaption>Visualization of the OpenTelemetry Demo</figcaption>
+</figure>
+
+## 2c) Visualize a Running Java Application
+
+In this section we explore how to visualize your desired application's runtime behavior. Therefore, we employ a dynamically analyzed Java example application.
 
 ### Start the target Java application
 
@@ -57,7 +87,7 @@ docker compose up --pull=always -d
 5\. In the top corners you can find buttons to open sidebars with additional settings and features.
 
 
-## Visualization Demo with Mocked Backend
+## Alternative: Visualization Demo with Mocked Backend
 
 Below you can find instructions that will set up a demo of ExplorViz' frontend component with exemplary data, i.e.,a mocked backend with previously recorded data from a target application.
 This demo can be used to explore our visualization approach, but is not fully functional due to the mocked backend.
